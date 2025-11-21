@@ -28,7 +28,7 @@ function getNoteListItem(text) {
   showMoreBtn.textContent = "Показать всё"
 
 
-  if (noteItem.textContent.length > 80) {
+  if (text.length > 80) {
     noteText.classList.add("note-list__text_hidden") // Добавляем класс для скрытия части текст
     noteItem.append(showMoreBtn)
 
